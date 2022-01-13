@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  visible = true;
+  logArray: number[] = [];
+  
+  
+  isVisible(){
+    this.visible = !this.visible;
+  }
+  
+  onToggleDetails(){
+    this.visible = !this.visible;
+    this.logArray.push(this.logArray.length+1);
+  }
 }

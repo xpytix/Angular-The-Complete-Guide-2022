@@ -1,0 +1,9 @@
+<div class="container">
+    <h3>to jest rodzic</h3>
+    <p>to odbieram od dziadka - {{inputMessage.inputMessage}} a to liczba {{inputMessage.no}}</p>
+    <input type="text" [(ngModel)]="messageFromParent">
+    <app-child [inputMessageParent]="messageFromParent" [timmer]="counter" (freezedNumber)="mgsDisplay($event)"></app-child>
+    <h4>Stan licznika - {{numberSave}}</h4>
+
+    <button (click)="onEmit()">Przekaz dziadkowi</button>
+</div>

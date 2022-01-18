@@ -1,0 +1,5 @@
+<div class="container">
+    <h3>To jest Dziadek</h3>
+    <app-parent [inputMessage]="{messageFromGrandparent: messageFromGrandparent, no: no}" (inputNumber)="mgsDisplay($event)"></app-parent>
+    <h2>Odbieram licznik od rodzica {{counter}}</h2>
+</div>
